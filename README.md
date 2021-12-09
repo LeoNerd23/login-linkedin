@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Login LinkedIn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Install package ```npm install --save react-linkedin-login-oauth2@latest```
 
-## Available Scripts
+First, we create a button and provide required props:
 
-In the project directory, you can run:
+<img src="docs/img/loginButton.PNG" style="width: 100%">
 
-### `yarn start`
+You can register your key [here](www.linkedin.com/developers/tools/oauth)
+Put your site key in the red tag
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Have a LinkedIn Developer application to [create new application](https://www.linkedin.com/developers/apps/new)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Authorization Code Flow
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Configure your application in the Developer Portal to obtain Client ID and Client Secret.
+2. Your application directs the browser to LinkedIn's OAuth 2.0 authorization page where the member authenticates.
+3. After authentication, LinkedIn's authorization server passes an authorization code to your application.
+4. Your application sends this code to LinkedIn and LinkedIn returns an access token.
+5. Your application uses this token to make API calls on behalf of the member.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Exemple button:
+<img src="docs/img/screenButton.PNG" style="width: 100%">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Login LinkedIn
+<img src="docs/img/loginLinkedIn.PNG" style="width: 100%">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
